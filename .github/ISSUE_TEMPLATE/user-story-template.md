@@ -12,5 +12,5 @@ As a **role** I can **capability** so that **recieve benefit**
 - Acceptance criteria 1
 
 - Acceptance criteria 2
- 
+
 - Acceptance criteria 3
