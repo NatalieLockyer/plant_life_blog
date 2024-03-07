@@ -18,8 +18,12 @@ class Post(models.Model):
     image = CloudinaryField('image', default='placeholder')
     duration = models.TextField(blank=True)
     serves = models.IntegerField(choices=PEOPLE, default=0)
+    source_of = models.TextField(blank=True)
     details = models.TextField()
+    ingredients = models.TextField(blank=True)
+    method = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
+    
