@@ -27,6 +27,14 @@ class Post(models.Model):
     excerpt = models.TextField()
     updated_on = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        """
+        Orders the recipes from newest to oldest creation time
+        """
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f" {self.title}"
 
 class Comment(models.Model):
     """
