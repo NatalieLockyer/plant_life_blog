@@ -6,12 +6,15 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
     """
+    In the admin page 
+    - Organises the posts by the list display
+    - Allows for the posts to be filtered by status - draft or published.
     """
-    list_display = ('title', 'slug', 'status')
-    search_fields = ['title']
+    list_display = ('title', 'slug', 'status', 'created_on')
+    search_fields = ['title', 'details',]
     list_filter = ('status',)
     prepopulated_fields = {'slug': ('title',)}
-    summernote_fields = ('content',)
+    summernote_fields = ('duration', 'source_of', 'details', 'ingredients', 'method', 'excerpt',)
 
 """
 This will allow me to create, update 
