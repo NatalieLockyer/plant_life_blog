@@ -10,8 +10,8 @@ class PostAdmin(SummernoteModelAdmin):
     - Organises the posts by the list display
     - Allows for the posts to be filtered by status - draft or published.
     """
-    list_display = ('title', 'slug', 'status', 'created_on')
-    search_fields = ['title', 'details',]
+    list_display = ('title', 'slug', 'status', 'created_on',)
+    search_fields = ['title', 'details', 'category']
     list_filter = ('status',)
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('duration', 'source_of', 'details', 'ingredients', 'method', 'excerpt',)

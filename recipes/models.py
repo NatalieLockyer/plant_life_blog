@@ -6,6 +6,8 @@ import datetime
 
 STATUS = ((0, "Draft"), (1, "Published"))
 PEOPLE = ((0, "Serves 1"), (1, "Serves 2"), (2, "Serves 2 - 4"))
+CATEGORY = ((0, "Breakfast"), (1, "Lunch"), (2, "Dinner"), (3, "Snacks"), (4, "Drinks"))
+
 
 class Post(models.Model):
     """
@@ -16,6 +18,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="recipe_posts")
     image = CloudinaryField('image', default='placeholder')
+    category = models.IntegerField(choices=CATEGORY, default=0)
     duration = models.TextField(max_length=20,)
     serves = models.IntegerField(choices=PEOPLE, default=0)
     source_of = models.TextField(max_length=50,)
