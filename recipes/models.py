@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 import datetime
 
 STATUS = ((0, "Draft"), (1, "Published"))
-PEOPLE = ((0, "Serves 1"), (1, "Serves 2"), (2, "Serves 2 - 4"))
+PEOPLE = ((0, "Serves 1"), (1, "Serves 2"), (2, "Serves 2 - 4"), (3, "Serves 4 - 6"), (4, "Serves 8 - 12"))
 CATEGORY = ((0, "Breakfast"), (1, "Lunch"), (2, "Dinner"), (3, "Snacks"), (4, "Drinks"))
 
 
