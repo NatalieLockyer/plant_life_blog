@@ -27,7 +27,7 @@ class Post(models.Model):
     method = models.TextField(max_length=500,)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    excerpt = models.TextField()
+    excerpt = models.TextField(default='Default excerpt')
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:

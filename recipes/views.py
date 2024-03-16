@@ -23,13 +23,14 @@ def post_detail(request, slug):
     
     """
 
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects.all()
     post = get_object_or_404(queryset, slug=slug)
 
     return render (
         request,
         "recipes/post_detail.html",
-        {"post": post},
+        {"post": post,
+        "coder": "Natalie Lockyer"},
     )
 
 

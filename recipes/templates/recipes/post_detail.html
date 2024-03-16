@@ -24,7 +24,20 @@
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text">
-                    {{ post.content | safe }}
+                    {{ post.duration | safe }}
+                    <br>
+                    {{ post.serves | safe }}
+                    <br>
+                    {{ post.source_of | safe }}
+                    <br>
+                    {{ post.details | safe }}
+                    <br>
+                    {{ post.ingredients | safe }}
+                    <br>
+                    {{ post.method | safe }}
+                    <br>
+                    {{ post.updated_on | safe }}
+                    <br>
                 </p>
             </div>
         </div>
