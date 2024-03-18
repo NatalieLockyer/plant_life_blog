@@ -19,7 +19,7 @@ def post_detail(request, slug):
 
     **Template**
 
-    :template:`recipe/post_detail.html`
+    :template:`recipe/index.html`
     
     """
 
