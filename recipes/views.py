@@ -43,7 +43,7 @@ def post_detail(request, slug):
             )
 
     comment_form = CommentForm()
-
+    
     return render (
         request,
         "recipes/post_detail.html",
