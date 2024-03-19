@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-natalielock-plantlifebl-dfp08rw1gxw.ws-eu110.gitpod.io', '.herokuapp.com']
 
@@ -49,9 +49,9 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
-    'about',
     'cloudinary',
     'recipes',
+    'about',
 ]
 
 SITE_ID = 1
