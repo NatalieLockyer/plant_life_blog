@@ -23,7 +23,7 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
     path('benefits/', include("benefits.urls"), name="benefits-urls"),
-    path('mainhp/', include("mainhp.urls"), name="mainhp-urls"),
+    path('recipes/', include("recipes.urls"), name="recipes-urls"),
     path('summernote/', include('django_summernote.urls')),
-    path("", include("recipes.urls"), name='recipes-urls'),
+    path("", include("mainhp.urls"), name='mainhp-urls'),
     ]
