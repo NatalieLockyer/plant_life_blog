@@ -4,21 +4,65 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4 text-center">
-            <img src="{% static 'images/nobody.jpg' %}" width="75%" />
-        </div>
-        <div class="col-8">
-            <!-- Title goes between these h2 tags -->
-            <h2>Why Plant Based? What are the Benefits</h2>
+        <div class="col-12 mt-5">
+            <!-- Benefits Title -->
+            <h2 class="text-center brand-title">What are the benefits of a Plant Based Diet?</h2>
             <!-- Content goes directly underneath this -->
             {{ benefits.content | safe }}
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
-            <!-- Updated on field goes in here -->
+</div>
 
-            <p class="text-end"><em>Updated on: {{ benefits.updated_on }}</em></p>
+<!--This is the 'Benefits'container-->
+<div class="container mt-5 ">
+    <div class="row">
+        <!--Benefit 1-->
+        <div class="col-4 mt-5">
+            <img src="{% static 'images/default.png' %}" width="75%" alt="Image of Male">
+        </div>
+        <div class="col-8 mt-5">
+            <p>Benefit 1</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--Benefit 2-->
+        <div class="col-8 mt-5">
+            <p> Benefit 2</p>
+        </div>
+
+        <div class="col-4 mt-5">
+            <img src="{% static 'images/default.png' %}" width="75%" alt="Image of Male">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 mt-5">
+            <!--Benefit 3-->
+            <img src="{% static 'images/default.png' %}" width="75%" alt="Image of Male">
+        </div>
+        <div class="col-8 mt-5">
+            <p> Benefit 3</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--Benefit 4-->
+        <div class="col-8 mt-5">
+            <p> Benefit 4</p>
+        </div>
+        <div class="col-4 mt-5">
+            <img src="{% static 'images/default.png' %}" width="75%" alt="Image of Male">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 mt-5">
+            <!--Benefit 5-->
+            <img src="{% static 'images/default.png' %}" width="75%" alt="Image of Male">
+        </div>
+        <div class="col-8 mt-5">
+            <p> Benefit 5</p>
         </div>
     </div>
 </div>
