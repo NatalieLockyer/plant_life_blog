@@ -14,6 +14,11 @@ body {
     font-size: 100px;
 }
 
+.brand-subtitle {
+    font-family: "Dancing Script", cursive;
+    font-size: 75px;
+}
+
 .light-bg {
     background-color: #fff;
 }
