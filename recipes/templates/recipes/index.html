@@ -28,22 +28,21 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <div class="image-container">
+                            <div class="image-container text-center">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
                                     alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}"
+                                    style="width: 200px; height: 200px; object-fit: cover;">
                                 {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-title">{{ post.duration }}, {{ post.serves }}</p>
-                                <p class="card-title">{{ post.source_of }}</p>
+                                <h2 class="card-title text-center brand">{{ post.title }}</h2>
+                                <p class="card-title text-center lato-light-italic">{{ post.duration }}, {{ post.serves}}</p>
+                                <p class="card-title text-center lato-light-italic">{{ post.source_of }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}}
-                            </p>
                         </div>
                     </div>
                 </div>
