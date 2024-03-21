@@ -11,7 +11,7 @@ body {
 
 .brand-title {
     font-family: "Dancing Script", cursive;
-    font-size: 4rem;
+    font-size: 100px;
 }
 
 .light-bg {
@@ -29,6 +29,13 @@ body {
 .card {
     border: none;
     background-color: transparent;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: black;
 }
 
 .image-container {
