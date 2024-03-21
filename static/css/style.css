@@ -9,6 +9,11 @@ body {
     color: #4A4A4F;
 }
 
+.brand-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+}
+
 .light-bg {
     background-color: #fff;
 }
