@@ -57,8 +57,8 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = 'https://8000-natalielock-plantlifebl-dfp08rw1gxw.ws-eu110.gitpod.io'
-LOGOUT_REDIRECT_URL = 'https://8000-natalielock-plantlifebl-dfp08rw1gxw.ws-eu110.gitpod.io'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
