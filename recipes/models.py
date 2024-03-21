@@ -17,7 +17,7 @@ class Post(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="recipe_post")
-    image = CloudinaryField('image', default='placeholder')
+    featured_image = CloudinaryField('image', default='placeholder')
     category = models.IntegerField(choices=CATEGORY, default=0)
     duration = models.TextField(max_length=20,)
     serves = models.IntegerField(choices=PEOPLE, default=0)
