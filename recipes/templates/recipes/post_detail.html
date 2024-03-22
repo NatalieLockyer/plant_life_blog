@@ -7,12 +7,14 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6 mt-5 p-auto d-flex align-items-center 
-        justify-content-center text-center brand-title">{{post.title }}</div>
-        <div class="col-6 mt-5 p-6 image-container text-center">
+        justify-content-center text-center brand">
+            <h1 class="fw-bold fs-1 fs-md-2 fs-lg-3">{{post.title }}</h1>
+        </div>
+        <div class="col-6 mt-5 p-6 image-container text-center ">
             {% if "placeholder" in post.featured_image.url %}
-            <img class="text-center" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+            <img class="text-center image-fluid" src="{% static 'images/default.jpg' %}" alt="placeholder image">
             {% else %}
-            <img class="text-center" src=" {{ post.featured_image.url }}" alt="{{ post.title }}"
+            <img class="text-center image-fluid" src=" {{ post.featured_image.url }}" alt="{{ post.title }}"
                 style="max-width: 100%; height: auto; object-fit: cover;">
             {% endif %}
         </div>
@@ -27,21 +29,27 @@
             <div class="card-body">
                 <!-- These are all the fields I want to display in the container. 
                     I have used the | safe filter inside the template tags -->
-                <p class="card-text text-center">
-                    <i class="fa-solid fa-clock"></i>{{ post.duration | safe }},
-                    <i class="fa-solid fa-user"></i> {{ post.serves | safe }}
+                <p class="card-text text-center lato-light-italic fs-5 fs-md-4 fs-lg-3"">
+                    <i class=" fa-solid fa-clock"></i>{{ post.duration | safe }},
+                    <i class="fa-solid fa-user"></i> Recipe serves {{ post.serves | safe }} people
                     <br>
                     <i class="fa-solid fa-leaf"></i></i>{{ post.source_of | safe }}
                     <br>
                     {{ post.details | safe }}
                     <br>
-                    {{ post.ingredients | safe }}
-                    <br>
-                    {{ post.method | safe }}
-                    <br>
-                    {{ post.updated_on | safe }}
-                    <br>
-                </p>
+                    <hr />
+            </div>
+            <div class="card-text text-center lato-light-italic fs-5 fs-md-4 fs-lg-3"">
+
+                {{ post.ingredients | safe }}
+                <br>
+                {{ post.method | safe }}
+                <br>
+                <hr />
+            </div>
+            <div class=" card-text text-end lato-light-italic fs-5 fs-md-4 fs-lg-3"">
+                Post updated on: {{ post.updated_on | safe }}
+                <br>
             </div>
         </div>
     </div>

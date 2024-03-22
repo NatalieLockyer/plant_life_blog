@@ -29,18 +29,20 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container text-center">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                    alt="placeholder image">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}"
-                                    style="width: 200px; height: 200px; object-fit: cover;">
-                                {% endif %}
+                                <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                                    {% if "placeholder" in post.featured_image.url %}
+                                    <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                        alt="placeholder image">
+                                    {% else %}
+                                    <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                                        alt="{{ post.title }}" style="width: 200px; height: 200px; object-fit: cover;">
+                                    {% endif %}
                             </div>
-                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title text-center brand">{{ post.title }}</h2>
-                                <p class="card-title text-center lato-light-italic">{{ post.duration }}, {{ post.serves}}</p>
-                                <p class="card-title text-center lato-light-italic">{{ post.source_of }}</p>
+                            <p class="card-title text-center lato-light-italic h2">{{ post.title }}</p>
+                            <p class="card-title text-center lato-light-italic h5">{{ post.duration }}, Serves
+                                {{post.serves}} people
+                            </p>
+                            <p class="card-title text-center lato-light-italic h5">{{ post.source_of }}</p>
                             </a>
                             <hr />
                         </div>
