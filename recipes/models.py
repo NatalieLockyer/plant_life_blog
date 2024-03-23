@@ -6,7 +6,7 @@ import datetime
 
 STATUS = ((0, "Draft"), (1, "Published"))
 PEOPLE = ((0, "Serves 1"), (1, "Serves 2"), (2, "Serves 2 - 4"), (3, "Serves 4 - 6"), (4, "Serves 8 - 12"))
-CATEGORY = ((0, "Breakfast"), (1, "Lunch"), (2, "Dinner"), (3, "Snacks"), (4, "Drinks"))
+CATEGORY = ((0, "Breakfast"), (1, "Dinner"), (2, "Desserts"), (3, "Drinks"))
 
 
 class Post(models.Model):
@@ -23,8 +23,8 @@ class Post(models.Model):
     serves = models.IntegerField(choices=PEOPLE, default=0)
     source_of = models.TextField(max_length=50,)
     details = models.TextField()
-    ingredients = models.TextField(max_length=300,)
-    method = models.TextField(max_length=500,)
+    ingredients = models.TextField(max_length=500,)
+    method = models.TextField(max_length=1000,)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
