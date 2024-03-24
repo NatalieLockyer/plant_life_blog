@@ -95,3 +95,37 @@ def comment_delete(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
+# def post_list(request):
+#     posts = Post.objects.all()
+#     categories = Category.objects.all()
+
+#     return render(request, 'post_detail.html', {
+#         'posts': posts,
+#         'categories': categories
+#     })
+
+
+# def filter_by_category(request, category_id):
+#     posts = Post.objects.filter(category_id=category_id)
+#     categories = Category.object.all()
+#     return render(request, 'post_detail.html', {
+#         'recipes': recipes,
+#         'categories': categories
+#     })
+
+# def recipe_list(request):
+#     """
+#     Filter Recipes by category
+#     """
+#     breakfast_recipes = recipes.objects.filter(category='breakfast')
+#     main_recipes = recipes.object.filter(category='mains')
+#     desserts_recipe = recipes.object.filter(category='desserts')
+#     drinks_recipes = recipes.object.filter(category='drinks')
+    
+#     return render(request, 'index.html', {
+#         'breakfast_recipes': breakfast_recipes,
+#         'main_recipes': main_recipes,
+#         'dessert_recipes': dessert_recipes,
+#         'drinks_recipes': drinks_recipes,
+#     })

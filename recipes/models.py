@@ -8,6 +8,11 @@ STATUS = ((0, "Draft"), (1, "Published"))
 PEOPLE = ((0, "Serves 1"), (1, "Serves 2"), (2, "Serves 2 - 4"), (3, "Serves 4 - 6"), (4, "Serves 8 - 12"))
 CATEGORY = ((0, "Breakfast"), (1, "Dinner"), (2, "Desserts"), (3, "Drinks"))
 
+# class Category(models.Model):
+#     name = models.CharField(max_length=200)
+
+#     def __str__(self):
+#         return self.name
 
 class Post(models.Model):
     """
