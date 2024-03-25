@@ -31,10 +31,10 @@
                             <div class="image-container text-center">
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                     {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                    <img src="{% static 'images/default.jpg' %}" class="card-img-top"
                                         alt="placeholder image">
                                     {% else %}
-                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}"
+                                    <img src="{{ post.featured_image.url }}" class="card-img-top" alt="{{ post.title }}"
                                         style="width: 200px; height: 200px; object-fit: cover;">
                                     {% endif %}
                             </div>
