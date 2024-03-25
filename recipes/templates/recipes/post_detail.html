@@ -14,7 +14,7 @@
             {% if " placeholder" in post.featured_image.url %} <img class="text-center img-fluid"
                 src="{% static 'images/default.jpg' %}" alt="placeholder image">
             {% else %}
-            <img class="text-center img-fluid" src=" {{ post.featured_image.url }}" alt="{{ post.title }}"
+            <img class="text-center img-fluid" src="{{ post.featured_image.url }}" alt="{{ post.title }}"
                 style="max-width: 100%; height: auto; object-fit: cover;">
             {% endif %}
         </div>
