@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
+{% block content %}
+
 
 <div class="container mt-5">
     <div class="row">
@@ -13,13 +14,13 @@
 
 <!--This is the 'Benefits'container-->
 <div class="container mt-5 ">
-    <div class="row">
+    <div class="row mt-5">
         <!--Benefit 1-->
-        <div class="col-md-4 my-3">
-            <img src="{% static 'images/nutrition.jpg' %}" class="img-fluid" alt="Image of Male">
+        <div class="col-md-4 my-3 mt-auto mb-auto text-center">
+            <img src="{% static 'images/nutrition.jpg' %}" class="img-fluid " alt="Image of fruit and veg">
         </div>
-        <div class="col-8 mt-5">
-            <p class="text-center about-subtitle fs-3 fs-md-4 fs-lg-5">Better Nutrition</p>
+        <div class="col-12 col-md-8 align-items-center justify-content-center">
+            <p class="about-subtitle text-decoration-underline fs-3 fs-md-4 fs-lg-5 text-center">Better Nutrition</p>
             <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Plants are healthy, and most of us don't eat
                 the
                 recommended amount of fruits
@@ -31,33 +32,36 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-5 flex-md-row flex-column-reverse">
         <!--Benefit 2-->
-        <div class="col-8 mt-5">
-            <p class="text-center about-subtitle fs-3 fs-md-4 fs-lg-5">A Healthier Heart</p>
-            <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Eating a vegetarian diet may lower your risk
+        <div class="col-12 col-md-8 align-items-center justify-content-center">
+            <p class="text-center text-decoration-underline about-subtitle fs-3 fs-md-4 fs-lg-5">A Healthier Heart</p>
+            <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Eating a vegetarian diet may lower your
+                risk
                 of
                 cardiovascular disease, and may
                 improve other risk factors for heart
-                disease by lowering your blood pressure and cholesterol, and improving your blood sugar control. Eating
+                disease by lowering your blood pressure and cholesterol, and improving your blood sugar control.
+                Eating
                 plant-based can
                 also help quell inflammation, which raises your risk of heart disease by promoting plaque buildup in
                 your arteries.</p>
         </div>
-
-        <div class="col-md-4 my-3">
-            <img src="{% static 'images/heart.jpg' %}" class="img-fluid" alt="Image of Male">
+        <div class="col-md-4 my-3 mt-auto mb-auto text-center">
+            <img src="{% static 'images/heart.jpg' %}" class="img-fluid" alt="Image of a heart">
         </div>
     </div>
 
-    <div class="row">
-        <div div class="col-md-4 my-3">
-            <!--Benefit 3-->
-            <img src="{% static 'images/diabetes.jpg' %}" class="img-fluid" alt="Image of Male">
+    <div class="row mt-5">
+        <!--Benefit 3-->
+        <div div class="col-md-4 my-3 mt-auto mb-auto text-center">
+            <img src="{% static 'images/diabetes.jpg' %}" class="img-fluid"
+                alt="Image of a pineapple with a diabetes banner on it">
         </div>
-        <div class="col-8 mt-5">
-            <p class="text-center about-subtitle fs-3 fs-md-4 fs-lg-5">Lower Diabetes Risk</p>
-            <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Eating a vegetarian diet can help prevent and treat type 2
+        <div class="col-12 col-md-8 align-items-center justify-content-center">
+            <p class="text-center text-decoration-underline about-subtitle fs-3 fs-md-4 fs-lg-5">Lower Diabetes Risk</p>
+            <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Eating a vegetarian diet can help prevent and
+                treat type 2
                 diabetes, according
                 to a 2021 study published in Advances in
                 Nutrition. This is because plant-based diets improve insulin sensitivity, help with weight management
@@ -70,12 +74,13 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-5 flex-md-row flex-column-reverse">
         <!--Benefit 4-->
-        <div class="col-8 mt-5">
-            <p class="text-center about-subtitle fs-3 fs-md-4 fs-lg-5">Decreased Cancer Risk
+        <div class="col-12 col-md-8 align-items-center justify-content-center">
+            <p class="text-center text-decoration-underline about-subtitle fs-3 fs-md-4 fs-lg-5">Decreased Cancer Risk
             </p>
-            <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Research consistently shows that regularly eating plenty
+            <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">Research consistently shows that regularly
+                eating plenty
                 of fruits, veggies,
                 legumes and grains—aka plants—is associated
                 with a lower cancer risk. Plus, those disease-fighting phytochemicals in plants have also been shown to
@@ -86,8 +91,8 @@
                 also from
                 replacing some less-healthy foods with plant-based foods.</p>
         </div>
-        <div div class="col-md-4 my-3">
-            <img src="{% static 'images/cancer.jpg' %}" class="img-fluid" alt="Image of Male">
+        <div div class="col-md-4 my-3 mt-auto mb-auto text-center">
+            <img src="{% static 'images/cancer.jpg' %}" class="img-fluid" alt="Image of the cancer awareness ribbon">
         </div>
     </div>
 </div>
