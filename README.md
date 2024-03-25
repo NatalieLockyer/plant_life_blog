@@ -1,39 +1,53 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [Plant Life](https:)
+(Developer: Natalie Lockyer)
 
-Welcome,
+## Demo
+[To view live website, click here](https:)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# [Purpose of the Project]
+Plant Life is a ficticious website dedicated to sharing plant based recipes and health benefits with with its followers. The website has been designed to to inform users of how beneficial it is to switch to a plant-based diet. Not only is it great for your health, the recipes are delicious too. 
+This is a full stack frame work built using the Django framework. The wesbsite provides its followers with an 'about us' page, a benefits page, a recipes page which can be filtered into categories so the user doesnt have to wade through all the recipes if they just wanted a breakfast recipe. Users can also comment on the recipes, edit and delete their comment. Users are required to register in order to comment. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Contents
++ [User Experience](#user-experience)
+    + [Key Project Goals](#key-project-goals)
+    + [Target Audience](#target-audience)
+    + [User Requirements and Expectations](#user-requirements-and-expectations)
+    + [User Stories](#user-stories)
+    + [Lucid Chart](#lucid-chart)
++ [Design](#design)
+    + [Typography ](#typography)
++ [Features](#features)
+    + [Main Start Page](#main-start-page)
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
++ [Future Features](#future-features)
++ [Wireframes]
++ [ERD]
++ [Technologies Used](#technologies-used)
+    + [Languages Used](#language)
+    + [Frameworks Used](#frameworks-and-tools)
+    + [Python Libraries](#python-libraries)
+    + [My Python Files ](#my-python-files)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
++ [Testing](#testing)
+  + [Code Validation](#code-validation)
+  + [Full Testing](#full-testing)
+  + [Bugs](#bugs)
+  + [Supported Browsers](#supported-browsers)
+  + [Deployment and Local Deployment](#deployment-and-local-deployment)
+  + [Deployment](#deployment)
+  + [Local Deployment](#local-deployment)
+  + [How to Clone](#how-to-clone)
++ [Credits](#credits)
++ [Acknowledgement](#acknowledgements)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+***
+***
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+# User Experience
