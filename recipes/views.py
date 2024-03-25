@@ -7,6 +7,10 @@ from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """
+    Returns all the published posts in :model:`recipe.Post`
+    and displays them in a page of 6 posts.
+    """
     template_name = "recipes/index.html"
     paginate_by = 6
     model = Post 
@@ -78,7 +82,16 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    View to edit comments
+    Displays an individuals comment for edit
+    **Context**
+
+    ``post``
+        An instance of :model:`recipes.Post`.
+    ``comment``
+        A single comment related to the post.
+    ``comment_form``
+        An instance of :form:`recipes.CommentForm`
+
     """
     if request.method == "POST":
 
@@ -101,7 +114,15 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete comment
+     Delete an individual comment.
+
+    **Context**
+
+    ``post``
+        An instance of :model:`recipes.Post`.
+    ``comment``
+        A single comment related to the post.
+        
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -114,38 +135,3 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'Youre only able to delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-# def post_list(request):
-#     posts = Post.objects.all()
-#     categories = Category.objects.all()
-
-#     return render(request, 'post_detail.html', {
-#         'posts': posts,
-#         'categories': categories
-#     })
-
-
-# def filter_by_category(request, category_id):
-#     posts = Post.objects.filter(category_id=category_id)
-#     categories = Category.object.all()
-#     return render(request, 'post_detail.html', {
-#         'recipes': recipes,
-#         'categories': categories
-#     })
-
-# def recipe_list(request):
-#     """
-#     Filter Recipes by category
-#     """
-#     breakfast_recipes = recipes.objects.filter(category='breakfast')
-#     main_recipes = recipes.object.filter(category='mains')
-#     desserts_recipe = recipes.object.filter(category='desserts')
-#     drinks_recipes = recipes.object.filter(category='drinks')
-    
-#     return render(request, 'index.html', {
-#         'breakfast_recipes': breakfast_recipes,
-#         'main_recipes': main_recipes,
-#         'dessert_recipes': dessert_recipes,
-#         'drinks_recipes': drinks_recipes,
-#     })

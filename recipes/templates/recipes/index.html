@@ -9,7 +9,9 @@
             <!-- Recipes Title -->
             <h2 class="text-center brand-title">Plant Based Recipes!</h2>
 
-            <p class="lato-light-italic text-center">Here are a selection of our favourite recipes. Please
+            <p class="mt-5 lato-light-italic fs-3 fs-md-4 fs-lg-5 text-center">Here are a selection of our favourite
+                recipes.
+                Please
                 feel free to leave any feedback in the comments section within each recipe.<br>
                 We look forward to you trying these recipes for yourself, and hope you feel as amazing
                 afterwards as we do!</p>
@@ -18,7 +20,8 @@
 </div>
 
 <!-- index.html content starts here -->
-<!-- This is a filter so the user is able to set ti to the category they want-->
+
+<!-- This is a filter so the user is able to select which recipe they want to see based on the category they select-->
 <div>
     <div class="row">
         <div class="col-12 mt-5 lato-light-italic fs-3 fs-md-4 fs-lg-5 text-center">You can also use the filter below to
@@ -26,8 +29,9 @@
         </div>
         <div class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5"><a class="text-center"
                 href="?category=0">Breakfast</a> | <a href="?category=1">Dinner</a> | <a href="?category=2">Desserts</a>
-            | <a href="?category=3">Drinks</a>
-        </div>>
+            | <a href="?category=3">Drinks</a> | <a href="{% url 'recipes' %}">All Recipes</a>
+        </div>
+
     </div>
 
 </div>
