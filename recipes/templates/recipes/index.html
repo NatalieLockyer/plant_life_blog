@@ -34,8 +34,8 @@
                                     <img class="card-img-top" src="{% static 'images/default.jpg' %}"
                                         alt="placeholder image">
                                     {% else %}
-                                    <img class="card-img-top" src=" {{ post.featured_image.url }}"
-                                        alt="{{ post.title }}" style="width: 200px; height: 200px; object-fit: cover;">
+                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}"
+                                        style="width: 200px; height: 200px; object-fit: cover;">
                                     {% endif %}
                             </div>
                             <p class="card-title text-center lato-light-italic h2">{{ post.title }}</p>
