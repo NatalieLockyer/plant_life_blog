@@ -1,16 +1,36 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, Http404
 from .models import Post, Comment
 from .forms import CommentForm
 
 
 class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1)
     template_name = "recipes/index.html"
     paginate_by = 6
- 
+    model = Post 
+
+    def get_queryset(self):
+        """
+        This is to override the original queryset to allow filtering by category.
+        """
+        queryset = super().get_queryset().filter(status=1)
+
+        """
+        This is to capture the category from query parameters.
+        """
+        category = self.request.GET.get('category', None)
+
+        if category is not None:
+            try:
+                category = int(category)
+                queryset = queryset.filter(category=category)
+            except ValueError:
+                pass
+
+        return queryset.order_by('category')
+
 
 def post_detail(request, slug):
     """
