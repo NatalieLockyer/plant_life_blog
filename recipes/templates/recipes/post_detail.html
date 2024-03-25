@@ -37,6 +37,9 @@
                     <br>
                     {{ post.details | safe }}
                     <br>
+                    <strong class="text-center">
+                        <i class="far fa-comments "></i>{{ comment_count }}
+                    </strong>
                     <hr />
             </div>
             <div class="card-text text-center lato-light-italic fs-5 fs-md-4 fs-lg-3">
@@ -57,22 +60,11 @@
             </div>
         </div>
     </div>
-    <!-- Displaying number of comments for each recipe -->
-    <div class=" row">
-                <div class="col-12">
-                    <strong class="text-secondary">
-                        <i class="far fa-comments"></i> {{ comment_count }}
-                    </strong>
-                </div>
-                <div class="col-12">
-                    <hr>
-                </div>
-            </div>
-
-            <!-- Displaying approved comments -->
-            <div class="row">
+    
+    <!-- Displaying approved comments -->
+            <div class=" row">
                 <div class="col-md-8 card mb-4 mt-3 lato-light-italic fs-5 fs-md-4 fs-lg-3">
-                    <h3>Comments:</h3>
+                    <h3><mark>Comments:</mark></h3>
                     <div class="card-body">
                         <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                         {% for comment in comments %}

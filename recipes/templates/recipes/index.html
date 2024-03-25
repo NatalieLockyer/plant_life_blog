@@ -58,6 +58,9 @@
                             </p>
                             <p class="card-title text-center lato-light-italic h5">{{ post.source_of }}</p>
                             </a>
+                            <p class="card-title text-center lato-light-italic"><strong class="text-center">
+                                <i class="far fa-comments"></i>{{ comment_count }}
+                            </strong></p>
                             <hr />
                         </div>
                     </div>
@@ -84,6 +87,8 @@
     </nav>
     {% endif %}
 </div>
+
+
 
 <!-- index.html content ends here -->
 {% endblock %}
