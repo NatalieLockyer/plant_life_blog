@@ -13,18 +13,24 @@
 
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-4 text-center img-fluid">
-                        <img src="{% static 'images/nobody.jpg' %}" width="75%" />
+                    <div class="col-md-4 my-3">
+                        <img src="{% static 'images/woman.jpg' %}" class="img-fluid rounded-circle"
+                            alt="Responsive image">
                     </div>
-                    <div class="col-8">
-                        <h2 class="text-center">{{ about.title }}</h2>
-                        <p>{{ about.content | safe }}</p>
+                    <div class="col-md-8">
+                        <h2 class="text-center about-subtitle fs-3 fs-md-4 fs-lg-5">About Me!</h2>
+                        <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">
+                            Hi, I'm Tilly and I created and designed the "Plant Life". I first looked at a plant-based
+                            diet when I
+                            experienced some minor health issues and realized my diet was possibly contributing to it.
+                            The more I delved
+                            into the plant world, the more I discovered the many health benefits of cooking with them.
+                            I'm excited to share
+                            with you what I have learned and look forward to any feedback about the ideas and recipes
+                            throughout the site.
+                        </p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col text-right">
-                        <p class="text-end brand"><em>Updated on: {{ about.updated_on }}</em></p>
-                    </div>
+                    <hr />
                 </div>
             </div>
         </div>
@@ -39,46 +45,45 @@
 
 <div class="container mt-5 ">
     <div class="row">
-        <!--Team Member 1-->
-        <div class="col-4 mt-5 img-fluid">
-            <img src="{% static 'images/nobody.jpg' %}" width="75%" alt="Image of Male">
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 mt-5">
+                <img src="{% static 'images/male.jpg' %}" class="rounded-circle img-fluid" alt="Image of Male">
+            </div>
+            <div class="col-md-8 mt-5">
+                <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">This is Samuel, my husband of ten years,
+                    and the harshest critic initially, is now a plant convert
+                    and handles
+                    the day-to-day communication with our followers. He is also the one behind the lens and photographs
+                    all of the
+                    amazing recipes that we put together.</p>
+            </div>
         </div>
-        <div class="col-8 mt-5">
-            <p>This will be the content about Male?????</p>
+
+        <div class="row">
+            <!-- Team Member 2 -->
+            <div class="col-md-8 mt-5">
+                <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">This is Ella and Oakley, Our resident
+                    taste testers! Ella has a real sweet tooth for desserts and
+                    Oakley will
+                    do anything for a piece of Carrot!</p>
+            </div>
+            <div class="col-md-4 mt-5">
+                <img src="{% static 'images/child.jpg' %}" class="rounded-circle img-fluid"
+                    alt="Image of child and puppy">
+            </div>
         </div>
     </div>
+    <hr />
 
-
-    <div class="row">
-        <!--Team Member 2-->
-        <div class="col-8 mt-5">
-            <p> This will be the content about Female?????</p>
-        </div>
-
-        <div class="col-4 mt-5 img-fluid">
-            <img src="{% static 'images/nobody.jpg' %}" width="75%" alt="Image of Male">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-4 mt-5 img-fluid">
-            <!--Team Member 3-->
-            <img src="{% static 'images/nobody.jpg' %}" width="75%" alt="Image of Male">
-        </div>
-        <div class="col-8 mt-5">
-            <p> This will be the content about Pup?????</p>
-        </div>
-    </div>
-</div>
-
-
-
-<!--This is the Collaborate container-->
-</div>
+    <!--This is the Collaborate container-->
+</div mt-5>
 <div class="row justify-content-center">
     <div class="col-12 col-md-6 mt-5">
-        <h2 class="text-center lato-light-italic">Do you want to get in touch or think we should collaborate?</h2>
-        <p class="text-center lato-light-italic">We are big believers in 'Knowledge is Power'. <br>
+        <h2 class="text-center text-decoration-underline lato-light-italic fs-3 fs-md-4 fs-lg-5">Do you want to get in
+            touch or think we should
+            collaborate?</h2>
+        <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">We are big believers in 'Knowledge is Power'. <br>
             If you have a project in mind, want any advice on any or the content you have read,
             or would love to share your recipes, please get in touch!<br>
             We're excited to hear from you. <br>

@@ -9,6 +9,12 @@ body {
     color: #4A4A4F;
 }
 
+.about-subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
 .brand-title {
     font-family: "Dancing Script", cursive;
     font-size: 6rem;
