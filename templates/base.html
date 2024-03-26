@@ -1,11 +1,12 @@
 {% load static %}
-{% url 'recipes' as recipes_url %}
+
 {% url 'about' as about_url %}
 {% url 'benefits' as benefits_url %}
 {% url 'mainhp' as mainhp_url %}
+{% url 'recipes' as recipes_url %}
 {% url 'account_login' as login_url %}
-{% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
+{% url 'account_signup' as signup_url %}
 
 
 <!DOCTYPE html>
@@ -13,6 +14,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Meta tags for search engines -->
+    <meta name="description"
+        content="Plant Life, a website dedicated to a plant based diet. Tried and tested recipes that will make your mouth water. ">
+    <meta name="keywords"
+        content="plant-based, diet, healthy, health benefits, recipes, mouth watering, easy, tasty, breakfast ideas, main ideas, dessert ideas">
 
     <title>Plant Based Blog</title>
     <!-- Favicon -->
@@ -40,7 +47,7 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark dark-bg">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'mainhp' %}">
@@ -90,7 +97,8 @@
             </div>
         </div>
     </nav>
-    <!-- displaying Django messages when user submits a comment-->
+
+    <!--Displaying Django messages when user submits a comment-->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -105,7 +113,7 @@
         </div>
     </div>
 
-
+    <!-- This is situated on the right hand side an tells the user if they are logged in or not. -->
     <main class="flex-shrink-0 main-bg">
 
         {% if user.is_authenticated %}
