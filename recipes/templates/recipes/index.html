@@ -4,19 +4,17 @@
 {% block content %}
 
 <!-- index.html content starts here -->
-
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 mt-5">
             <!-- Recipes Title -->
             <h2 class="text-center brand-title">Plant Based Recipes!</h2>
-
             <p class="mt-5 lato-light-italic fs-3 fs-md-4 fs-lg-5 text-center">Here are a selection of our favourite
-                recipes.
-                Please
-                feel free to leave any feedback in the comments section within each recipe.<br>
+                recipes. Please feel free to leave any feedback in the comments section within each recipe.
+                <br>
                 We look forward to you trying these recipes for yourself, and hope you feel as amazing
-                afterwards as we do!</p>
+                afterwards as we do!
+            </p>
         </div>
     </div>
 </div>
@@ -28,14 +26,12 @@
                 href="?category=0">Breakfast</a> | <a href="?category=1">Mains</a> | <a href="?category=2">Desserts</a>
             | <a href="?category=3">Drinks</a> | <a href="{% url 'recipes' %}">All Recipes</a>
         </div>
-
     </div>
-
 </div>
 
+<!-- Blog Entries Column -->
 <div class="container-fluid">
     <div class="row">
-        <!-- Blog Entries Column -->
         <div class="col-12 mt-5 left">
             <div class="row">
                 {% for post in post_list %}
@@ -51,19 +47,18 @@
                                     <img src="{{ post.featured_image.url }}" class="card-img-top" alt="{{ post.title }}"
                                         style="width: 200px; height: 200px; object-fit: cover;">
                                     {% endif %}
+
+                                    <p class="card-title text-center lato-light-italic h2">{{ post.title }}</p>
+                                    <p class="card-title text-center lato-light-italic h5">{{ post.duration }}, Serves
+                                        {{ post.serves }}</p>
+                                    <p class="card-title text-center lato-light-italic h5">{{ post.source_of }}</p>
+                                </a>
+                                <p class="card-title text-center lato-light-italic"><strong class="text-center">
+                                        <i class="far fa-comments"></i> {{ post.comments_count }}
+                                    </strong>
+                                </p>
+                                <hr>
                             </div>
-                            <p class="card-title text-center lato-light-italic h2">{{ post.title }}</p>
-                            <p class="card-title text-center lato-light-italic h5">{{ post.duration }}, Serves
-                                {{ post.serves }}
-                            </p>
-                            <p class="card-title text-center lato-light-italic h5">{{ post.source_of }}</p>
-                            </a>
-
-                            <p class="card-title text-center lato-light-italic"><strong class="text-center">
-                                    <i class="far fa-comments"></i> {{ post.comments_count }}
-                                </strong></p>
-
-                            <hr />
                         </div>
                     </div>
                 </div>
@@ -73,7 +68,6 @@
                 {% endif %}
                 {% endfor %}
             </div>
-
         </div>
     </div>
     {% if is_paginated %}
@@ -89,8 +83,5 @@
     </nav>
     {% endif %}
 </div>
-
-
-
 <!-- index.html content ends here -->
 {% endblock %}

@@ -34,16 +34,13 @@
             </div>
         </div>
     </div>
-    <hr />
+    <hr>
 </div>
 
 <!--This is the Behind the Scenes'container-->
 <!--Subtitle-->
 <div class="container mt-5">
-    <h2 class="text-center brand-subtitle py-6"> Behind the Scenes!</h2>
-</div>
-
-<div class="container mt-5">
+    <h2 class="text-center brand-subtitle py-6"> Behind the Scenes!</h2>d
     <div class="row">
         <div class="row">
             <!-- Team Member 1 -->
@@ -79,38 +76,38 @@
             </div>
         </div>
     </div>
-    <hr />
+    <hr>
 
     <!--This is the Collaborate container-->
-</div mt-5>
-<div class="row justify-content-center">
-    <div class="col-12 col-md-6 mt-5">
-        <h2 class="text-center text-decoration-underline fw-bold lato-light-italic fs-3 fs-md-4 fs-lg-5">Would you like
-            to get
-            in
-            touch or think we should
-            collaborate?</h2>
-        <br>
-        <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">We believe in 'Knowledge is Power'. <br>
-            If you have a project in mind, want any advice on any or the content you have read, want to share any
-            your tips and story, or would like to share your recipes, please get in touch!
-            <br>
-            <br>
-            We're excited to hear from you. <br>
-            Please fill out the below form and lets get together!
-        </p>
+    <div class="mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-5">
+                <h2 class="text-center text-decoration-underline fw-bold lato-light-italic fs-3 fs-md-4 fs-lg-5">Would
+                    you like
+                    to get in touch or think we should collaborate?</h2>
+                <br>
+                <p class="text-center lato-light-italic fs-3 fs-md-4 fs-lg-5">We believe in 'Knowledge is Power'. <br>
+                    If you have a project in mind, want any advice on any or the content you have read, want to share
+                    any
+                    your tips and story, or would like to share your recipes, please get in touch!
+                    <br>
+                    <br>
+                    We're excited to hear from you. <br>
+                    Please fill out the below form and lets get together!
+                </p>
 
-        <!-- Collaboration Form -->
+                <!-- Collaboration Form -->
 
-        <form method="post">
-            {{ collaborate_form | crispy }}
-            {% csrf_token %}
-            <div class="text-center">
-                <button class="btn btn-secondary" type="submit">Submit</button>
+                <form method="post">
+                    {{ collaborate_form | crispy }}
+                    {% csrf_token %}
+                    <div class="text-center">
+                        <button class="btn btn-secondary" type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-</div>
+        </div>
 
+    </div>
 </div>
 {% endblock content %}
