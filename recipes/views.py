@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
+from django.db.models import Count
 from django.http import HttpResponseRedirect, Http404
 from .models import Post, Comment
 from .forms import CommentForm
@@ -19,7 +20,7 @@ class PostList(generic.ListView):
         """
         This is to override the original queryset to allow filtering by category.
         """
-        queryset = super().get_queryset().filter(status=1)
+        queryset = super().get_queryset().annotate(comments_count=Count('comments', distinct=True)).filter(status=1)
 
         """
         This is to capture the category from query parameters.

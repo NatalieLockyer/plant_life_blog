@@ -3,6 +3,8 @@
 
 {% block content %}
 
+<!-- index.html content starts here -->
+
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 mt-5">
@@ -18,8 +20,6 @@
         </div>
     </div>
 </div>
-
-<!-- index.html content starts here -->
 
 <!-- This is a filter so the user is able to select which recipe they want to see based on the category they select-->
 <div>
@@ -54,13 +54,15 @@
                             </div>
                             <p class="card-title text-center lato-light-italic h2">{{ post.title }}</p>
                             <p class="card-title text-center lato-light-italic h5">{{ post.duration }}, Serves
-                                {{post.serves}}
+                                {{ post.serves }}
                             </p>
                             <p class="card-title text-center lato-light-italic h5">{{ post.source_of }}</p>
                             </a>
+
                             <p class="card-title text-center lato-light-italic"><strong class="text-center">
-                                <i class="far fa-comments"></i>{{ comment_count }}
-                            </strong></p>
+                                    <i class="far fa-comments"></i> {{ post.comments_count }}
+                                </strong></p>
+
                             <hr />
                         </div>
                     </div>

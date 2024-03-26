@@ -89,28 +89,28 @@
             <div class="row row row-cols-1 row-cols-md-4 g-3 img-fluid">
                 <div class="col">
                     <p class="lato-light-italic text-decoration-underline fs-3 fs-md-4 fs-lg-5">Breakfast</p>
-                    <a href="{% url 'recipes'%} ">
+                    <a href="{% url 'recipes' %}?category=0">
                         <img src="{% static 'images/breakfast.avif' %}" alt="breakfast image"
                             style="width: 150px; height: 150px; object-fit: cover;">
                     </a>
                 </div>
                 <div class="col">
                     <p class="lato-light-italic text-decoration-underline fs-3 fs-md-4 fs-lg-5">Mains</p>
-                    <a href="{% url 'recipes' %}">>
+                    <a href="{% url 'recipes' %}?category=1">
                         <img src="{% static 'images/mains.jpg' %}" alt="Mains image"
                             style="width: 150px; height: 150px; object-fit: cover;">
                     </a>
                 </div>
                 <div class="col">
                     <p class="lato-light-italic text-decoration-underline fs-3 fs-md-4 fs-lg-5">Desserts</p>
-                    <a href="{% url 'recipes' %}">
+                    <a href="{% url 'recipes' %}?category=2">
                         <img src="{% static 'images/desserts.avif' %}" alt="Desserts image"
                             style="width: 150px; height: 150px; object-fit: cover;">
                     </a>
                 </div>
                 <div class="col">
                     <p class="lato-light-italic text-decoration-underline fs-3 fs-md-4 fs-lg-5">Drinks</p>
-                    <a href="{% url 'recipes' %}">
+                    <a href="{% url 'recipes' %}?category=4">
                         <img src="{% static 'images/snacks.jpg' %}" alt="Drinks image"
                             style="width: 150px; height: 150px; object-fit: cover;">
                     </a>
