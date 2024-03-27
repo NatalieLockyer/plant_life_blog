@@ -21,8 +21,9 @@ class PostList(generic.ListView):
         This is to override the original queryset to allow
         filtering by category.
         """
-        queryset = super().get_queryset().annotate
-        (comments_count=Count('comments', distinct=True)).filter(status=1)
+        queryset = super().get_queryset().annotate(
+            comments_count=Count('comments', distinct=True)
+        ).filter(status=1)
 
         """
         This is to capture the category from query parameters.
@@ -38,7 +39,7 @@ class PostList(generic.ListView):
 
         return queryset.order_by('category')
 
-    def post_detail(request, slug):
+def post_detail(request, slug):
         """
         Display an individual :model:`recipes.Post`.
 
@@ -80,7 +81,7 @@ class PostList(generic.ListView):
                 "comment_form": comment_form},
                 )
 
-    def comment_edit(request, slug, comment_id):
+def comment_edit(request, slug, comment_id):
         """
         Displays an individuals comment for edit
         **Context**
@@ -117,7 +118,7 @@ class PostList(generic.ListView):
 
             return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-    def comment_delete(request, slug, comment_id):
+def comment_delete(request, slug, comment_id):
         """
         Delete an individual comment.
 

@@ -16,8 +16,8 @@ class PostAdmin(SummernoteModelAdmin):
     search_fields = ['title', 'details', ]
     list_filter = ('status',)
     prepopulated_fields = {'slug': ('title',)}
-    summernote_fields =
-    ('duration', 'source_of', 'details', 'ingredients', 'method', 'excerpt',)
+    summernote_fields = ('duration', 'source_of', 'details',
+        'ingredients', 'method', 'excerpt',)
 
     """
     This will allow me to create, update
