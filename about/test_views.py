@@ -30,7 +30,7 @@ class TestAboutView(TestCase):
         response = self.client.post(reverse('about'), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b"Your message has been recieved!",
+            "Your message has been recieved!",
             " We will endeavor to respond within 2 working days",
             response.content
             )
