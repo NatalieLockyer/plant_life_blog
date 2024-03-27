@@ -20,7 +20,8 @@ class TestCollaborateForm(TestCase):
             'email': 'test@test.com',
             'message': 'Hello!'
         })
-        self.assertFalse(form.is_valid(), msg="Name not provided, but the form is valid")
+        self.assertFalse
+        (form.is_valid(), msg="Name not provided, but the form is valid")
 
     def test_email_is_required(self):
         """ Test for all fields"""
@@ -29,7 +30,8 @@ class TestCollaborateForm(TestCase):
             'email': '',
             'message': 'Hello!'
         })
-        self.assertFalse(form.is_valid(), msg="Email not provided, but the form is valid")
+        self.assertFalse
+        (form.is_valid(), msg="Email not provided, but the form is valid")
 
     def test_name_is_required(self):
         """ Test for all fields"""
@@ -38,4 +40,5 @@ class TestCollaborateForm(TestCase):
             'email': 'test@test.com',
             'message': ''
         })
-        self.assertFalse(form.is_valid(), msg="Message not provided, but the form is valid")
+        self.assertFalse
+        (form.is_valid(), msg="Message not provided, but the form is valid")

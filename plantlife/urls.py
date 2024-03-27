@@ -25,5 +25,5 @@ urlpatterns = [
     path('benefits/', include("benefits.urls"), name="benefits-urls"),
     path('recipes/', include("recipes.urls"), name="recipes-urls"),
     path('summernote/', include('django_summernote.urls')),
-    path("", include("mainhp.urls"), name='mainhp-urls'),    
+    path("", include("mainhp.urls"), name='mainhp-urls'),
     ]

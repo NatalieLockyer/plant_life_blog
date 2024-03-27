@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Mainhp
 
+
 def mainhp_page(request):
     """
     Renders the Mainhp (home) page

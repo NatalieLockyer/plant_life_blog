@@ -1,6 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 class Benefits(models.Model):
     """
     Stores a single benefit entry
@@ -12,5 +13,3 @@ class Benefits(models.Model):
 
     def __str__(self):
         return self.title
-
-

@@ -17,9 +17,8 @@ class TestRecipesViews(TestCase):
                          slug="recipes-title", excerpt="recipe excerpt",
                          details="recipes-details", status=1)
         self.post.save()
-        
 
-def test_successful_comment_submission(self):
+    def test_successful_comment_submission(self):
         """Test for posting a comment on a post"""
         self.client.login(
             username="myUsername", password="myPassword")
@@ -33,4 +32,3 @@ def test_successful_comment_submission(self):
             b'Comment submitted and awaiting approval',
             response.content
         )
-

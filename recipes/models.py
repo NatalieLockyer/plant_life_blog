@@ -1,12 +1,20 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-
 import datetime
 
+
 STATUS = ((0, "Draft"), (1, "Published"))
-PEOPLE = ((0, "Serves 0"), (1, "Serves 1"), (2, "Serves 2"), (3, "Serves 2 - 4"), (4, "Serves 4 - 6"), (4, "Serves 6 - 8"))
+PEOPLE = (
+    (0, "Serves 0"),
+    (1, "Serves 1"),
+    (2, "Serves 2"),
+    (3, "Serves 2 - 4"),
+    (4, "Serves 4 - 6"),
+    (5, "Serves 6 - 8")
+)
 CATEGORY = ((0, "Breakfast"), (1, "Dinner"), (2, "Desserts"), (3, "Drinks"))
+
 
 class Post(models.Model):
     """
@@ -38,6 +46,7 @@ class Post(models.Model):
     def __str__(self):
         return f" {self.title}"
 
+
 class Comment(models.Model):
     """
     Stores a single comment entry related to :model:`auth.User`
@@ -49,7 +58,7 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         """
         Orders the comments from newest to oldest creation time

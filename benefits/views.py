@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Benefits
 
+
 def benefits_info(request):
     """
     Renders the Benefits Page
@@ -8,8 +9,7 @@ def benefits_info(request):
     benefits = Benefits.objects.all().order_by('-updated_on').first()
 
     return render(
-        request, 
+        request,
         "benefits/benefits.html",
-        {"benefits": benefits}
-        ,)
-
+        {"benefits": benefits},
+            )

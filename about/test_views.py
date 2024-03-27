@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
-from .models import About
 from .forms import CollaborateForm
+from .models import About
 
 
 class TestAboutView(TestCase):
@@ -20,7 +20,6 @@ class TestAboutView(TestCase):
         self.assertIsInstance(
             response.context['collaborate_form'], CollaborateForm)
 
-    
     def test_successful_collaboration_request_submission(self):
         """Test for a user requesting a collaboration"""
         post_data = {
@@ -31,4 +30,7 @@ class TestAboutView(TestCase):
         response = self.client.post(reverse('about'), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b"Your message has been recieved! We will endeavor to respond within 2 working days", response.content)
+            b"Your message has been recieved!"
+            " We will endeavor to respond within 2 working days",
+            response.content
+            )
