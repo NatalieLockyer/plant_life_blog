@@ -60,36 +60,36 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'mainhp' %}">Home</a>
+                        <a class="text-white nav-link {% if request.path == about_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'mainhp' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'about' %}">About</a>
+                        <a class="text-white nav-link {% if request.path == about_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'benefits' %}">Benefits</a>
+                        <a class="text-white nav-link {% if request.path == about_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'benefits' %}">Benefits</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == recipes_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'recipes' %}">Recipes</a>
+                        <a class="text-white nav-link {% if request.path == recipes_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'recipes' %}">Recipes</a>
                     </li>
 
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_logout' %}">Logout</a>
+                        <a class="text-white nav-link {% if request.path == logout_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_signup' %}">Register</a>
+                        <a class="text-white nav-link {% if request.path == signup_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_login' %}">Login</a>
+                        <a class="text-white nav-link {% if request.path == login_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
 
@@ -130,11 +130,15 @@
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="lato-light-italic m-0 text-center text-white">Content created by Natalie Lockyer - Copyright 2024 </p>
-        <p class="mt-2 lato-light-italic m-0 text-center text-white">Follow us: <i
-                class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
+        <p class="mt-2 lato-light-italic m-0 text-center text-white">Follow us:
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-square ms-3"></i></a>
+            <a href="https://www.twitter.com/">
+                <i class="fab fa-twitter-square ms-3"></i></a>
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram-square ms-3"></i></a>
+            <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube-square ms-3"></i></a>
         </p>
     </footer>
 
