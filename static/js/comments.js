@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 const editButtons = document.getElementsByClassName("btn-edit");
 const commentText = document.getElementById("id_body");
 const commentForm = document.getElementById("commentForm");
@@ -20,6 +21,10 @@ for (let button of editButtons) {
         commentForm.setAttribute("action", `edit_comment/${commentId}`);
     });
 }
+
+/**
+ * This initialises the delete functionality for the provided delete buttons
+ */
 
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
