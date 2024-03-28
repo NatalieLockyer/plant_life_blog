@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-natalielock-plantlifebl-dfp08rw1gxw.ws-eu110.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-natalielock-plantlifebl-wztfa8dpkhi.ws-eu110.gitpod.io', '.herokuapp.com']
 
 # Application definition
 
@@ -110,8 +110,7 @@ WSGI_APPLICATION = 'plantlife.wsgi.application'
 # }
 
 DATABASES = {
-    'default':
-dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 if 'test' in sys.argv:
