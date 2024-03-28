@@ -15,10 +15,13 @@ This is a full stack frame work built using the Django framework. The wesbsite p
     + [User Requirements and Expectations](#user-requirements-and-expectations)
     + [User Stories](#user-stories)
     + [Wireframes]
+      + [Homepage mobile and desktop](#homepage-mobile-and-desktop)
+      + [About Me mobile and desktop](#about-me-page-mobile-and-desktop)
+      + [Benefits mobile and desktop](#benefits-page-mobile-and-desktop)
+      + [Recipes mobile and desktop](#recipe-page-mobile-and-desktop)
     + [Entity Relationship Diagram (ERD)](#entity-relationship-diagram)
 + [Design](#design)
     + [Typography ](#typography)
-
 + [Features](#features)
     + [Main Start Page](#main-start-page)
     + [About Me Pageg](#about-me-page)
@@ -105,9 +108,9 @@ As a site Admin,
 
 ### WireFrames
 
-These are images of my wireframe designs. 
+These are images of my wireframe designs that I did on Balsamiq.
 
-* Homepage Mobile and Desktop
+### Homepage Mobile and Desktop
 
 <p align="center">
 <img src="./static/images/readme/homepage_mobile.jpg">
@@ -117,7 +120,7 @@ These are images of my wireframe designs.
 <img src="./static/images/readme/homepage_desktop.jpg">
 </p>
 
-* About Me page Mobile and Desktop
+### About Me page Mobile and Desktop
 
 <p align="center">
 <img src="./static/images/readme/aboutme_mobile.jpg">
@@ -127,7 +130,7 @@ These are images of my wireframe designs.
 <img src="./static/images/readme/aboutme_desktop.jpg">
 </p>
 
-* Benefits page Mobile and Desktop
+### Benefits page Mobile and Desktop
 
 <p align="center">
 <img src="./static/images/readme/benefits_mobile.jpg">
@@ -137,7 +140,7 @@ These are images of my wireframe designs.
 <img src="./static/images/readme/benefits_desktop.jpg">
 </p>
 
-* Recipe page Mobile and Desktop
+### Recipe page Mobile and Desktop
 
 <p align="center">
 <img src="./static/images/readme/recipes_mobile.jpg">
@@ -359,7 +362,65 @@ In the future I would like to add the following features:
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [CI Linter Code Checker](https://pep8ci.herokuapp.com/)
 
+## Testing
 
+### Code Validation 
+
+* PEP 8 is a style guide for python.
+I have tested all pages that are required to go throught this validation and are showing 'NO ERRORS'
+
+* W3C Validation 
+Each page was checked on the W3C Validator and passed with 'NO ERRORS'
+
+Main Homepage
+<p align="center">
+<img src="./static/images/readme/mainhp_html.png"> 
+</p>
+
+About Me Page
+<p align="center">
+<img src="./static/images/readme/about_html.png"> 
+</p>
+
+Benefits Page
+<p align="center">
+<img src="./static/images/readme/benefits_html.png"> 
+</p>
+
+Recipe Page
+<p align="center">
+<img src="./static/images/readme/index_html.png"> 
+</p>
+
+Recipe Post Method Page
+<p align="center">
+<img src="./static/images/readme/postdetail_html.png"> 
+</p>
+
+Style.css
+<p align="center">
+<img src="./static/images/readme/style_css.png"> 
+</p>
+
+### Full Testing
+
+
+
+| Feature      | Expected Outcome | Testing Performed    | Result | Pass or Fail |
+|   :---       |      :----:      |        :----:        | :----: |    :----:    |
+|      |                  |                      |        |              |
+|Select webpage link      | Page Loads       |Select 'RUN PROGRAM'  | Page Loads |   PASS      |
+
+### Bugs
+
+There are no bugs remaining.
+
+### Supported Browsers
+
+* Chrome
+* Firefox
+* Safari
+* Edge
 
 ## Deployment and Local Deployment
 
@@ -403,6 +464,7 @@ After the initial account setup
 
 * [Django Blog CI Walk through Project]() - Code was adatpted from the CI love sandwiches project. 
 * [W3Schools](https://www.w3schools.com/) - was used as a refresher to explain loops/while loops when I was unsure why my code wasnt working.
+* [Bootstrap](http://getbootstrap) - was used to import templates and styling to the website.
 * [Deliciously Ella](www.figlet.org/examples) - was used to source some of the recipes.
 * [Eating Well ](https://www.eatingwell.com/article/291622/the-health-benefits-of-eating-a-plant-based-diet-and-how-to-get-started/) was used to source the health benefits of a plant based diet.
 * [Python](#https://www.python.org/about/help/) was used as a general source of knowledge
