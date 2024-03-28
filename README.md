@@ -14,15 +14,15 @@ This is a full stack frame work built using the Django framework. The wesbsite p
     + [Target Audience](#target-audience)
     + [User Requirements and Expectations](#user-requirements-and-expectations)
     + [User Stories](#user-stories)
-    + [Lucid Chart](#lucid-chart)
+    + [Entity Relationship Diagram (ERD)](#entity-relationship-diagram)
+
+
+
+
 + [Design](#design)
     + [Typography ](#typography)
 + [Features](#features)
     + [Main Start Page](#main-start-page)
-
-
-
-
 
 
 
@@ -53,6 +53,7 @@ This is a full stack frame work built using the Django framework. The wesbsite p
 # User Experience
 
 ### Key Project Goals
+
 * To write and develop an informative, interactive, enjoyable website that users will want to return to.
 * The user should be able to navigate around the website with ease, whether on a mobile or desktop device. 
 * The main homepage will explain to the user what the website is about and detail what they can expect to find. 
@@ -63,11 +64,13 @@ This is a full stack frame work built using the Django framework. The wesbsite p
 * Users will be able to get in touch by sending a collaboration request, users do not need to have a register account to do this. 
 
 ### Target Audience
+
 * Users of any age that would like to find out more about switching to a plant based diet 
 * Users who like to browse different recipes and interact by giving feedback
 * Users who enjoy researching before diving into something
 
 ### User Requirements and Expectations 
+
 * An accessable website, that is clear and easy to navigate and understand.
 * The ability to see who is behind the blog
 * The ability to find numerous health benfits to the plant based diet.
@@ -77,6 +80,7 @@ This is a full stack frame work built using the Django framework. The wesbsite p
 * Users are able to add a comment on the recipe blog, edit or remove thier comments. 
 
 ### User Stories
+
 As a site visitor, 
 
 * Navigate around the site with ease. When clicking a page option the relevant page should load. 
@@ -88,7 +92,6 @@ As a site visitor,
 * I am able to register for a plant life account. Once I have registered and logged in, I am able to add numerous comments, reply, edit or delete my comments.
 * I am able to access a collaboration form, enter my details and submit the form. 
 
-
 As a site Admin,
 
 * On the homepage, I am able to add/change/delete images within the sliding carousel of images.
@@ -99,8 +102,9 @@ As a site Admin,
 * I am able to store collaboration requests and access them when I want to review them. I can mark them once they have been read. 
 
 
- 
+### Entity Relationship Diagram
 
+I created the following 
 
 
 
