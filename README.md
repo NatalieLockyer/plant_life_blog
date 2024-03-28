@@ -107,6 +107,45 @@ As a site Admin,
 
 These are images of my wireframe designs. 
 
+* Homepage Mobile and Desktop
+
+<p align="center">
+<img src="./static/images/readme/homepage_mobile.jpg">
+</p>
+
+<p align="center">
+<img src="./static/images/readme/homepage_desktop.jpg">
+</p>
+
+* About Me page Mobile and Desktop
+
+<p align="center">
+<img src="./static/images/readme/aboutme_mobile.jpg">
+</p>
+
+<p align="center">
+<img src="./static/images/readme/aboutme_desktop.jpg">
+</p>
+
+* Benefits page Mobile and Desktop
+
+<p align="center">
+<img src="./static/images/readme/benefits_mobile.jpg">
+</p>
+
+<p align="center">
+<img src="./static/images/readme/benefits_desktop.jpg">
+</p>
+
+* Recipe page Mobile and Desktop
+
+<p align="center">
+<img src="./static/images/readme/recipes_mobile.jpg">
+</p>
+
+<p align="center">
+<img src="./static/images/readme/recipes_desktop.jpg">
+</p>
 
 ### Entity Relationship Diagram
 
