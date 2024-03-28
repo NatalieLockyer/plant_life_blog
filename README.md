@@ -14,7 +14,7 @@ This is a full stack frame work built using the Django framework. The wesbsite p
     + [Target Audience](#target-audience)
     + [User Requirements and Expectations](#user-requirements-and-expectations)
     + [User Stories](#user-stories)
-    + [Wireframes]
+    + [Wireframes](#wireframes)
       + [Homepage mobile and desktop](#homepage-mobile-and-desktop)
       + [About Me mobile and desktop](#about-me-page-mobile-and-desktop)
       + [Benefits mobile and desktop](#benefits-page-mobile-and-desktop)
@@ -37,13 +37,10 @@ This is a full stack frame work built using the Django framework. The wesbsite p
 + [Technologies Used](#technologies-used)
     + [Languages Used](#language)
     + [Frameworks Used](#frameworks-and-tools)
-   
-
-
 + [Testing](#testing)
   + [Code Validation](#code-validation)
   + [Full Testing](#full-testing)
-  + [Bugs](#bugs)
+  + [Fixed Bugs](#fixed-bugs)
   + [Supported Browsers](#supported-browsers)
   + [Deployment and Local Deployment](#deployment-and-local-deployment)
   + [Deployment](#deployment)
@@ -404,7 +401,7 @@ Style.css
 
 ### Full Testing
 
-
+Both Manual and Automatic testing has been complete. Below is the manual testing that has taken place. The automatic testing is listed within the relevent app.
 
 | Feature         | Expected Outcome    | Testing Performed    | Result      | Pass or Fail     |
 |   :---          |      :----:         |        :----:        | :----:      |    :----:        |
@@ -450,7 +447,31 @@ Style.css
 |Login confirmation message|User should see message that confirms they have logged in|Login to account|Message appears   | PASS                 |
 |Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
 
-### Bugs
+### Fixed Bugs
+
+* Fixtures not uploading
+
+Each time I added a recipe to the fixture list, it would not show on the recipe page. To fix this error I needed to move the Primary Key that was listed in the correct place, I had put it into the field section, so i then removed this and added it outside of the field. 
+I also needed to remove the previous recipes that had been linked up and run the 'loaddata posts' with only the new recipes listed. 
+Once I had made these changes I was able to add them to the recipe page.
+
+Recipe Page
+<p align="center">
+<img src="./static/images/readme/fixture_error.png"> 
+</p>
+
+
+* dj-database-url
+
+Towards the end of my project I ran out of Gitpod hours which required me to create a new workspace. Once I had created it, I kept getting the below error message. I knew it had to 
+be something to do with this change as it was working before this. 
+
+Recipe Page
+<p align="center">
+<img src="./static/images/readme/dj_error.png"> 
+</p>
+
+In order to fix this error, I had to re-add the evn.py file as this has disappeared when I had created my new workspace. By putting the information back into the file, the site then  loaded without error.
 
 There are no bugs remaining.
 
