@@ -14,27 +14,28 @@ This is a full stack frame work built using the Django framework. The wesbsite p
     + [Target Audience](#target-audience)
     + [User Requirements and Expectations](#user-requirements-and-expectations)
     + [User Stories](#user-stories)
+    + [Wireframes]
     + [Entity Relationship Diagram (ERD)](#entity-relationship-diagram)
 + [Design](#design)
     + [Typography ](#typography)
 
-
-
-
-
 + [Features](#features)
     + [Main Start Page](#main-start-page)
-
-
-
+    + [About Me Pageg](#about-me-page)
+    + [Benefits Page](#benefits-page)
+    + [Recipe Page](#recipe-page)
+    + [Method Page](#method-page)
+    + [Category Page](#category-page)
+    + [SignUp Page](#signup-page)
+    + [Logout Page](#log-out-page)
+    + [Login Page](#login-page)
+    + [Comments Section](#comments-section)
 + [Future Features](#future-features)
-+ [Wireframes]
-+ [ERD]
 + [Technologies Used](#technologies-used)
     + [Languages Used](#language)
     + [Frameworks Used](#frameworks-and-tools)
-    + [Python Libraries](#python-libraries)
-    + [My Python Files ](#my-python-files)
+   
+
 
 + [Testing](#testing)
   + [Code Validation](#code-validation)
@@ -102,6 +103,10 @@ As a site Admin,
 * Via the admin section, I am able to edit any content on the website.
 * I am able to store collaboration requests and access them when I want to review them. I can mark them once they have been read. 
 
+### WireFrames
+
+These are images of my wireframe designs. 
+
 
 ### Entity Relationship Diagram
 
@@ -137,7 +142,6 @@ I created the following graphical representation used to model the data for each
 <img src="./static/images/readme/comment_erd.png">
 </p>
 
-
 ## Design 
 
 ### Typography 
@@ -155,12 +159,166 @@ For the remaining text i used a font called Lato, I used he thin italic version 
 </p>
 
 
+## Features
+
+### Main Start Page (Plant Life)
+
+This is an image of the main homepage. The page constists of a navigation bar, a login status, main title, sliding carousel images, content on the website, category images which are links to other pages in the website and a footer. 
+
+<p align="center">
+<img src="./static/images/readme/mainpage.png">
+</p>
+
+Dependent on the device you are using depends on how they appear on the screen. 
+
+* Navigation Bar - On a mobile device you will see a 'burger' menu on the right hand side, and when clicked a drop down list will appear of the pages within the website. 
+
+<p align="center">
+<img src="./static/images/readme/nav_mobile.png">
+</p>
+
+On a larger device you will see that the list appears at the top of the screen and the burger icon disappers. 
+
+<p align="center">
+<img src="./static/images/readme/nav_desktop.png">
+</p>
+
+* Category Images - On a mobile device the images are listed in a vertical line, and on larger images they will appear horizontal in a row of 4.
+
+<p align="center">
+<img src="./static/images/readme/category_mobile.png">
+</p>
 
 
+<p align="center">
+<img src="./static/images/readme/category_desktop.png">
+</p>
 
 
+### About Me Page
+
+This is an image of the about me page. The page gives the user information about the team behind the scene. The page is seperated in 3 parts. Firstly the about me section which details about the creator of the business, a behind the scenes section which details other members of the team, and finally a collaboration form were users can send their details to get in touch. The page is responsive and will alter the size of the text and images depending on the device being used to view the site.  
+
+<p align="center">
+<img src="./static/images/readme/aboutme_page.png"> 
+</p>
+
+### Benefits Page
+
+This is an image of the benefits page. The page gives infomation about some of the health benefits of a plant based diet. The page is seperated into 2 parts. Firstly a title section and secondly an image and text section. Each of the images have been placed at opposite ends of the screen to seperate them and make it more appealing to look at. The page is fully responsive and will alter the size of the text and images depending on what device is being used to view the site. 
+If a mobile device is being used the images will display vertically with the relevent text being show underneath the image. 
+
+<p align="center">
+<img src="./static/images/readme/benefits_page.png"> 
+</p>
 
 
+### Recipe Page
+
+This is an image of the recipe page. The page is serperated in 3 parts, firstly a title section, secondly a filter section where the user can select a category of the types of recipes they wish to view eg. 'breakfast' once clicked the screen will load with the relevant recipes. Finally the recipe section, which displays a paginated list of 6. On a mobile device the recipes are displayed vertically and on a larger device there will be 2 rows of 3 recipes. In each recipe section, there is an image, the title of the recipe, how long it takes to make, how many it serves, if it has any source of protien, etc and if anyone has commented on the recipe. These go into more detail when you click on the image. There is also a next and prev button so the user can move through the recipes easily. The page is fully responsive and will alter the size of the text and images depending on what device is being used to view the site.
+
+<p align="center">
+<img src="./static/images/readme/recipe_page.png"> 
+</p>
+
+### Method Page
+
+This is an image of the method page. When the user selects a recipe, this page will load with all the information they need to make the recipe. The page is seperated into 3 parts. The first section displays the name of the recipe, and image and details of how long it will take to make, how many the recipe will serve, if there are sources of protien, antioxidants etc and if anyone has commented on the recipe blog.
+The second section shows the ingredients need to make the recipe and a numbered list of the steps in order to make it. 
+The final section is where users can leave comments on the recipes, users are able to edit or delete their own comments, and there is no limit as to how many comments they leave. User do however have to be registed with the website in order to have this interaction. 
+
+<p align="center">
+<img src="./static/images/readme/method_page.png"> 
+</p>
+
+### Category Page
+
+This is an image of the category page. When a user selects one of the category images from the homepage or selects one of the filters on the recipe page, the category which they have chosen will appear and the relevent recipes listed. The screen is displayed in the same way as the recipes section, however only recipes relating to that cateogry will appear. 
+If there are more than 6 recipes, a next and prev button will appear at the bottom allowing the user to move through the recipes easily. 
+
+<p align="center">
+<img src="./static/images/readme/category_page.png"> 
+</p>
+
+### SignUp Page
+
+This is an image of the sign up page. User are required to register an account if they wish to comment on the recipes. To do this, they are required to provide a Username, email is optional, and a password.  
+
+<p align="center">
+<img src="./static/images/readme/signup_page.png"> 
+</p>
+
+Once the manditory fields and steps have been completed their registration is complete and there will be a message confirming this. There is also text on the right hand side to inform the user that they are logged in. 
+
+<p align="center">
+<img src="./static/images/readme/registration_successful.png"> 
+</p>
+
+### Log Out Page
+
+This is an image of the log out page. When a user requests to log out, a defensive screen will appear making sure the user definately wants to log out. 
+
+<p align="center">
+<img src="./static/images/readme/logout_page.png"> 
+</p>
+
+If the user selects No, they return to the site, however if they select yes, the user is returned to the homepage and the following message will appear.
+
+<p align="center">
+<img src="./static/images/readme/logout_message.png"> 
+</p>
+
+### Login Page
+
+This is an image of the login page. If a user has registered and account, they can click on the login section where they will be asked to confirm their username and password. Once this has been authorised the user will see the following message and can go ahead and make comments of any of the recipes.  
+
+<p align="center">
+<img src="./static/images/readme/login_page.png"> 
+</p>
+
+If the user selects No, they return to the site, however if they select yes, the user is returned to the homepage and the following message will appear.
+
+<p align="center">
+<img src="./static/images/readme/login_message.png"> 
+</p>
+
+### Comments Section
+
+This is an image of the comments section which appears in each of the recipes. If a user is logged in they are able to comment on the post. They enter this in the white box on the right and once completed they click submit. 
+The comments will not go live on the site until the admin has approved them, however while they are waiting to be approved the user is able to edit or delete their comment.
+
+<p align="center">
+<img src="./static/images/readme/comments_section.png"> 
+</p>
+
+### Future Features
+
+In the future I would like to add the following features:
+
+* I would like the user to be able to 'like' the recipe, this will then add the recipe into a favourite account which can be access via the navigation page. 
+* I would like to add other apps, that include exercise, wellbeing and relaxation pages.
+* I would also like to add a shopping list section where users can click on the recipe item and they will collect in a shopping list, once at the shop the user would be able to 'tick' off the item so it disappears from the list.
+
+### Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Python
+* Django
+
+### Frameworks and Tools Used
+
+* [Balsamiq](https://balsamiq.com/)
+* [GitHub](https://github.com/)
+* [Gitpod](https://www.gitpod.io/)
+* [Heroku](https://www.heroku.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Django Project](https://www.djangoproject.com/)
+* Microsoft Word - To make my ERD designs
+* [W3C Validator](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [CI Linter Code Checker](https://pep8ci.herokuapp.com/)
 
 
 
