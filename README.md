@@ -15,12 +15,13 @@ This is a full stack frame work built using the Django framework. The wesbsite p
     + [User Requirements and Expectations](#user-requirements-and-expectations)
     + [User Stories](#user-stories)
     + [Entity Relationship Diagram (ERD)](#entity-relationship-diagram)
-
-
-
-
 + [Design](#design)
     + [Typography ](#typography)
+
+
+
+
+
 + [Features](#features)
     + [Main Start Page](#main-start-page)
 
@@ -104,7 +105,54 @@ As a site Admin,
 
 ### Entity Relationship Diagram
 
-I created the following 
+I created the following graphical representation used to model the data for each individual application. 
+
+* Mainhp ERD
+<p align="center">
+<img src="./static/images/readme/mainhp_erd.png">
+</p>
+
+* About Me ERD
+<p align="center">
+<img src="./static/images/readme/aboutme_erd.png">
+</p>
+
+* Collaborate ERD
+<p align="center">
+<img src="./static/images/readme/collaborate_erd.png">
+</p>
+
+* Benefits ERD
+<p align="center">
+<img src="./static/images/readme/benefits_erd.png">
+</p>
+
+* Recipe ERD
+<p align="center">
+<img src="./static/images/readme/recipe_erd.png">
+</p>
+
+* Comment ERD
+<p align="center">
+<img src="./static/images/readme/comment_erd.png">
+</p>
+
+
+## Design 
+
+### Typography 
+
+For my main titles on the pages I used a font called Dancing Script, I particulary like this font and think it looks professional. 
+
+<p align="center">
+<img src="./static/images/readme/dancing_script.png">
+</p>
+
+For the remaining text i used a font called Lato, I used he thin italic version which i felt goes really well with the main title font. 
+
+<p align="center">
+<img src="./static/images/readme/lato.png">
+</p>
 
 
 
