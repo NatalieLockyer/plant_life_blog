@@ -406,10 +406,49 @@ Style.css
 
 
 
-| Feature      | Expected Outcome | Testing Performed    | Result | Pass or Fail |
-|   :---       |      :----:      |        :----:        | :----: |    :----:    |
-|      |                  |                      |        |              |
-|Select webpage link      | Page Loads       |Select 'RUN PROGRAM'  | Page Loads |   PASS      |
+| Feature         | Expected Outcome    | Testing Performed    | Result      | Pass or Fail     |
+|   :---          |      :----:         |        :----:        | :----:      |    :----:        |
+|                 |                     |                      |             |                  |
+|Homepage         |                     |                      |             |                  |
+|Navigation - links to other pages | Once clicked, should <br> go to relevant page | Each option in the Navigation <br> bar has been clicked | All links work | PASS         |
+|Logged in status |Says if the user is or isnt logged in. <br> Also displays username | Logged in and out and <br> Username and status is displayed | Username and status is displayed| PASS |
+|Sliding Images   |Images slide from right to left <br> and are responsive in size| Watched the images change, <br> and altered the screenize.| Both do as they should|  PASS               |
+|Category Images  | Each image links to the recipes within <br> that category and takes you to the relevent page|Clicked on each image| Images link to the correct categor page|PASS    |
+|Footer           |Social media icon takes you to relevent website| Cliked on each icon |Icon links to the correct website| PASS |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|About Me Page    |                     |                      |             |                  |
+|Collaboration Form| Error is shown if any of the required fields are missing|Try to submit while each required field is missing|Error appears| PASS   |
+|Collaboration Form|Submits to Admin once all fields are complete|Sent a request through and all fields completed|Collaboration request is in admin folder| PASS |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|Benefits Page    |                     |                      |             |                  |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|Recipe Page      |                     |                      |             |                  |
+|Filter           |Click on each link within the filter <br> and page displays with relevent recipes|Clicked on each link|Correct page displays |PASS        |
+|Recipe Post      |Click on each recipe image, <br>  this will then user to the method page|Clicked on all the recipe images|Correct method appears | PASS     |
+|Next Button      |Goes to next page of recipes    |Clicked the next button|Takes user to the next page of recipes|PASS                  |
+|Prev Button      |Goes to previous page of recipes |Clicked the previous button|Takes user to prevous page of recipes|PASS                |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|Method Page      |                     |                      |             |                  |
+|Recipe Information|All information, image, ingredients <br> and method are listed for each recipe|Click on each recipe|All information is listed| PASS |
+|Comments Section |All authorised comments appear on the page|Login to admin, approve comment|Comment appears on the page |Pass                  |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|Register Page    |                     |                      |             |                  |
+|Registraion Form |User registers an account and allows them to interact with the site|Create a new user|User registration complete and user can comment on posts |PASS|
+|Registraion confirmation message|User should see message that confirms registration of account|Create a new User|Message appears   | PASS                 |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|Logout Page      |Defensive message appears to ensure user wants to log out | Click to logout  |Defensive message appears |PASS                  |
+|Logout confirmation message|User should see message that confirms they have logged out|Logout of account|Message appears   | PASS                 |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
+|                 |                     |                      |             |                  |
+|Login Page       |User enters their username and password and is granted access to their account|Logged in |User is granted access to account |PASS                  |
+|Login confirmation message|User should see message that confirms they have logged in|Login to account|Message appears   | PASS                 |
+|Text and images are responsive |Page contents are responsive to the device screen size|Use different devices to check|Everything is responsive |PASS                  |
 
 ### Bugs
 
