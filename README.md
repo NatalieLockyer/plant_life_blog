@@ -1,8 +1,8 @@
-# [Plant Life](https://github.com/NatalieLockyer/plant_life_blog.git)
+# [Plant Life](https://plant-life-blog-c9e632f2f48f.herokuapp.com/)
 (Developer: Natalie Lockyer)
 
 ## Demo
-[To view live website, click here](https://github.com/NatalieLockyer/plant_life_blog.git)
+[To view live website, click here](https://plant-life-blog-c9e632f2f48f.herokuapp.com/)
 
 # Purpose of the Project
 Plant Life is a ficticious website dedicated to sharing plant based recipes and health benefits with with its followers. The website has been designed to to inform users of how beneficial it is to switch to a plant-based diet. Not only is it great for your health, the recipes are delicious too. 
